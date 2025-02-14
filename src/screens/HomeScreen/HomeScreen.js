@@ -4,6 +4,7 @@ import {
   TextInput,
   StyleSheet,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 import HomeHeadNav from '../../../components/HomeHeadNav';
@@ -35,6 +36,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
+    <SafeAreaView/>
       <StatusBar backgroundColor={'red'} />
       <HomeHeadNav />
 

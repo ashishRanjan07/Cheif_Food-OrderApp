@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, FlatList, StyleSheet, Pressable} from 'react-native';
+import {View, Text, FlatList, StyleSheet, Pressable, SafeAreaView} from 'react-native';
 import {firebase} from '../../firebase';
 
 export default function Profile() {
@@ -28,6 +28,7 @@ export default function Profile() {
 
   return (
     <View style={{flex: 1}}>
+    <SafeAreaView/>
       <Text style={{margin: 15, fontSize: 20, fontWeight: 'bold'}}>
         Profile Data{' '}
       </Text>
